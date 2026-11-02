@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Phishing Detector AI - Analysis</title>
+<link rel="stylesheet" href="analysis.css">
+</head>
+<body>
+<div class="layout">
+<aside>
+<div class="brand">
+<div class="brand-logo">🛡️</div>
+<div>
+<h2>Phishing Detector <span>AI</span></h2>
+<small>ตรวจสอบเว็บไซต์ด้วย Machine Learning</small>
+</div>
+</div>
+<nav>
+<div class="nav active" id="analysisNav">▦ ผลการวิเคราะห์</div>
+<div class="nav" id="historyNav">◷ ประวัติการตรวจสอบ</div>
+<div class="nav">♢ Whitelist</div>
+<div class="nav">⚙ ตั้งค่า</div>
+</nav>
+<div class="side-footer">
+Powered by<br>
+Random Forest
+</div>
+</aside>
+<main>
+<div class="topbar">
+<div>
+<h1>ผลการวิเคราะห์เว็บไซต์</h1>
+<p>รายละเอียดผลการตรวจสอบเว็บไซต์ล่าสุด</p>
+</div>
+<button id="refresh">⟳</button>
+</div>
+<div class="url-box">
+<div>
+<span>🔗</span>
+<span id="url">กำลังโหลด...</span>
+</div>
+<div id="scanTime">-</div>
+</div>
+<div class="summary-cards">
+<div class="summary-card blue">
+<div class="summary-icon">🤖</div>
+<div>
+<span>โมเดล AI</span>
+<strong>Random Forest</strong>
+</div>
+</div>
+<div class="summary-card green">
+<div class="summary-icon">🎯</div>
+<div>
+<span>ความเชื่อมั่น</span>
+<strong id="confidence">-</strong>
+</div>
+</div>
+<div class="summary-card red">
+<div class="summary-icon">🛡️</div>
+<div>
+<span>ผลการตรวจ</span>
+<strong id="prediction">-</strong>
+</div>
+</div>
+</div>
+<div class="section-title">
+ข้อมูลคุณลักษณะของเว็บไซต์
+</div>
+<div class="feature-grid" id="featureGrid"></div>
+</main>
+</div>
+<script src="analysis.js"></script>
+</body>
+</html>

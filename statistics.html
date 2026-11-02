@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Phishing Detector AI - History</title>
+<link rel="stylesheet" href="statistics.css">
+</head>
+<body>
+<div class="layout">
+<aside>
+<div class="brand">
+<div class="brand-logo">🛡️</div>
+<div>
+<h2>Phishing Detector <span>AI</span></h2>
+<small>ตรวจสอบเว็บไซต์ด้วย Machine Learning</small>
+</div>
+</div>
+<nav>
+<div class="nav" id="analysisNav">▦ ผลการวิเคราะห์</div>
+<div class="nav active">◷ ประวัติการตรวจสอบ</div>
+<div class="nav">♢ Whitelist</div>
+<div class="nav">⚙ ตั้งค่า</div>
+</nav>
+<div class="side-footer">
+Powered by<br>
+Random Forest
+</div>
+</aside>
+<main>
+<div class="topbar">
+<div>
+<h1>สถิติการตรวจสอบ</h1>
+<p>ข้อมูลสรุปและประวัติการตรวจสอบเว็บไซต์</p>
+</div>
+</div>
+<div class="stats">
+<div class="stat blue">
+<span>🌐 ทั้งหมด</span>
+<strong id="total">0</strong>
+</div>
+<div class="stat green">
+<span>✓ ปลอดภัย</span>
+<strong id="safe">0</strong>
+</div>
+<div class="stat red">
+<span>⚠ เสี่ยง</span>
+<strong id="danger">0</strong>
+</div>
+<div class="stat purple">
+<span>◉ อัตราปลอดภัย</span>
+<strong id="safePercent">0%</strong>
+</div>
+</div>
+<div class="content-box">
+<div class="box-header">
+<div>
+<h2>ประวัติการตรวจสอบล่าสุด</h2>
+<p>รายการเว็บไซต์ที่ผ่านการตรวจสอบ</p>
+</div>
+<button id="clearHistory">
+ล้างประวัติ
+</button>
+</div>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>วัน / เวลา</th>
+<th>URL</th>
+<th>ผลการตรวจสอบ</th>
+<th>ความเสี่ยง</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody id="historyBody"></tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+<script src="statistics.js"></script>
+</body>
+</html>
