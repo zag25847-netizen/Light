@@ -1,0 +1,6 @@
+How To Install
+1. Dowload All File From (https://github.com/zag25847-netizen/Light.git)
+2. Go to chrome://extensions Open Developer mode
+3. Select Load unpacked
+4. Select Folder from dowload
+5. End
